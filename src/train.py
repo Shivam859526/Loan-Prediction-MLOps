@@ -11,7 +11,7 @@ import warnings
 warnings.filterwarnings('ignore')
  
 # 2. Read Data
-credit_df = pd.read_csv("../data/credit_train.csv", header = 0, sep = ',')
+credit_df = pd.read_csv("./data/credit_train.csv", header = 0, sep = ',')
  
 # 3. Data Processing & Cleansing
 credit_df['Months since last delinquent'] = credit_df['Months since last delinquent'].fillna(0)
@@ -71,7 +71,7 @@ import warnings
 warnings.filterwarnings('ignore')
  
 # 2. Read Data
-credit_df = pd.read_csv("../data/credit_train.csv", header = 0, sep = ',')
+credit_df = pd.read_csv("./data/credit_train.csv", header = 0, sep = ',')
  
 # 3. Data Processing & Cleansing
 credit_df['Months since last delinquent'] = credit_df['Months since last delinquent'].fillna(0)
@@ -137,6 +137,6 @@ joblib.dump(clf_tree_best, "../model/loan_default.pkl")
 print("\nModel Saved Successfully!")
 
 # save test sample as csv for prediction
-X_test.to_csv("../data/x_test_sample.csv")
+X_test.to_csv("./data/x_test_sample.csv")
  
  
