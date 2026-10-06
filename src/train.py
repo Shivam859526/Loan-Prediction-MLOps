@@ -132,7 +132,7 @@ clf_tree_best = DecisionTreeClassifier(ccp_alpha = 0.001, criterion = 'gini',
  
 clf_tree_best.fit(X_train, Y_train)
  
-joblib.dump(clf_tree_best, "../model/loan_default.pkl")
+joblib.dump(clf_tree_best, "./model/loan_default.pkl")
  
 print("\nModel Saved Successfully!")
 
